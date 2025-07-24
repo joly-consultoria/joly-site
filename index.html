@@ -1,120 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joly Engenharia e Consultoria</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossos Serviços</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .service {
+      display: flex;
+      align-items: center;
+    }
+    .service img {
+      width: 64px;
+      height: 64px;
+      margin-right: 15px;
+    }
+  </style>
 </head>
-<body class="font-sans">
-
-  <!-- HEADER -->
-  <header class="bg-blue-800 text-white">
-    <div class="max-w-6xl mx-auto px-4 py-6 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Joly Engenharia e Consultoria</h1>
-      <nav class="space-x-4">
-        <a href="#servicos" class="hover:underline">Serviços</a>
-        <a href="#contato" class="hover:underline">Contato</a>
-      </nav>
+<body>
+  <h1>Nossos Serviços</h1>
+  <div class="services">
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/64/11063/11063273.png" alt="Obras">
+      <span>⚖️ Estrategista Legal de Obras</span>
     </div>
-  </header>
-
-  <!-- INÍCIO -->
-  <section id="inicio" class="py-20 bg-gray-100">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-4xl font-bold mb-6">Segurança, Transparência e Inovação</h2>
-      <p class="text-lg mb-8">Atuação com excelência em Engenharia Civil e Segurança do Trabalho.</p>
-      <a href="#contato" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">Fale Conosco</a>
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/64/2933/2933186.png" alt="Licenciamento Sanitário">
+      <span>Licenciamento Sanitário</span>
     </div>
-  </section>
-
-  <!-- SOBRE -->
-  <section id="sobre" class="py-16 bg-gradient-to-r from-gray-100 to-white relative overflow-hidden">
-    <div class="absolute top-0 right-0 w-64 h-full bg-blue-900 transform rotate-6 origin-top-right opacity-20"></div>
-    <div class="max-w-6xl mx-auto px-6 relative z-10">
-      <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Missão, Valores e Propósito</h2>
-      <div class="grid md:grid-cols-3 gap-8 text-left text-gray-700">
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-lg font-bold text-blue-800 mb-2">Missão</h3>
-          <p>Criar um ambiente de segurança e transparência...</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-lg font-bold text-blue-800 mb-2">Valores</h3>
-          <p>Ser reconhecida como uma empresa com excelência...</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-lg font-bold text-blue-800 mb-2">Propósito</h3>
-          <p>Realizar procedimentos para conformidade legal e segurança...</p>
-        </div>
-      </div>
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/64/685/685685.png" alt="Legalização">
+      <span>Legalização e Regularização de Obras</span>
     </div>
-  </section>
-
-  <!-- SERVIÇOS COM IMAGENS FUNCIONAIS -->
-  <section id="servicos" class="py-12 bg-white">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">Nossos Serviços</h2>
-      <div class="grid md:grid-cols-2 gap-6 text-sm">
-        <!-- Coluna 1 -->
-        <div class="space-y-6">
-          <div class="flex items-start space-x-4">
-            <img src="https://i.imgur.com/valid1.png" alt="Operário em obra com capacete e colete, planejamento" class="w-20 h-20 object-cover rounded-lg shadow" />
-            <p>⚖️ Estrategista Legal de Obras</p>
-          </div>
-          <div class="flex items-start space-x-4">
-            <img src="https://i.imgur.com/valid2.png" alt="Engenheiro analisando planta de projeto" class="w-20 h-20 object-cover rounded-lg shadow" />
-            <p>Legalização e Regularização de Obras</p>
-          </div>
-          <div class="flex items-start space-x-4">
-            <img src="https://i.imgur.com/valid3.png" alt="Perícia imobiliária em terreno" class="w-20 h-20 object-cover rounded-lg shadow" />
-            <p>Avaliações e Perícias Imobiliárias</p>
-          </div>
-        </div>
-        <!-- Coluna 2 -->
-        <div class="space-y-6">
-          <div class="flex items-start space-x-4">
-            <img src="https://i.imgur.com/valid4.png" alt="Engenheiro conduzindo licenciamento sanitário" class="w-20 h-20 object-cover rounded-lg shadow" />
-            <p>Licenciamento Sanitário</p>
-          </div>
-        </div>
-      </div>
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/64/854/854878.png" alt="Demolições">
+      <span>Demolições com Planejamento</span>
     </div>
-  </section>
-
-  <!-- CONTATO -->
-  <section id="contato" class="bg-gray-100 py-12">
-    <div class="max-w-4xl mx-auto text-center px-4">
-      <h2 class="text-3xl font-bold mb-4">Entre em Contato</h2>
-      <p class="mb-6">Estamos prontos para atender você com excelência.</p>
-      <div class="space-y-2 text-lg">
-        <p>📞 <strong>WhatsApp:</strong> <a href="https://wa.me/5541999197134" class="text-blue-600 underline" target="_blank">(41) 99919‑7134</a></p>
-        <p>📧 <strong>Email:</strong> <a href="mailto:joly.engenharia@gmail.com" class="text-blue-600 underline">joly.engenharia@gmail.com</a></p>
-        <p>🔗 <strong>Linktree:</strong> <a href="https://linktr.ee/joly.consultoria" class="text-blue-600 underline" target="_blank">linktr.ee/joly.consultoria</a></p>
-      </div>
-      <form class="mt-8 max-w-xl mx-auto text-left space-y-4">
-        <input type="text" name="nome" placeholder="Seu nome" required class="w-full p-3 border rounded-lg" />
-        <input type="email" name="email" placeholder="Seu e‑mail" required class="w-full p-3 border rounded-lg" />
-        <textarea name="mensagem" placeholder="Sua mensagem" required class="w-full p-3 border rounded-lg h-32"></textarea>
-        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Enviar</button>
-      </form>
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/64/2620/2620970.png" alt="Perícias">
+      <span>Avaliações e Perícias Imobiliárias</span>
     </div>
-  </section>
-
-  <!-- RODAPÉ -->
-  <footer class="bg-gray-800 text-white py-6 text-center text-sm">
-    <p>&copy; 2025 Joly Engenharia e Consultoria. Todos os direitos reservados.</p>
-    <p class="mt-2">
-      Acesse todos os nossos canais:
-      <a href="https://linktr.ee/joly.consultoria" class="underline text-blue-400" target="_blank">linktr.ee/joly.consultoria</a>
-    </p>
-  </footer>
-
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/64/1201/1201647.png" alt="SST">
+      <span>Programas e Laudos de SST (PGR, PCMSO, LTCAT, etc)</span>
+    </div>
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/64/2910/2910768.png" alt="Orçamento">
+      <span>Orçamentos de Obras e Licitações</span>
+    </div>
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/64/4712/4712380.png" alt="SIPAT">
+      <span>Organização de SIPAT e Brigadas</span>
+    </div>
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/64/2530/2530556.png" alt="Construção">
+      <span>Construções, Reformas e Ampliações</span>
+    </div>
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/64/3798/3798291.png" alt="E-social">
+      <span>Lançamento de dados no E-social (S2210, S2220, S2240)</span>
+    </div>
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/64/2991/2991126.png" alt="Bombeiros">
+      <span>Projeto de Bombeiros</span>
+    </div>
+    <div class="service">
+      <img src="https://cdn-icons-png.flaticon.com/64/3103/3103446.png" alt="Treinamentos">
+      <span>Treinamentos (NR05 a NR35)</span>
+    </div>
+  </div>
 </body>
 </html>
 
-
-
-       
 
 
