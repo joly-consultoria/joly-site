@@ -1,88 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nossos Serviços</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Serviços - Joly Consultoria</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
     }
-    h1 {
+
+    h2 {
       text-align: center;
-    }
-    .services {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
+      font-size: 2.5rem;
       margin-top: 40px;
+      color: #000;
     }
-    .service {
+
+    .services-container {
       display: flex;
-      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 30px;
     }
-    .service img {
-      width: 64px;
-      height: 64px;
-      object-fit: cover;
-      margin-right: 15px;
-      border-radius: 8px;
+
+    .service-item {
+      width: 300px;
+      padding: 20px;
+      background-color: #f7f9fc;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .service-item:hover {
+      transform: scale(1.03);
+    }
+
+    .service-title {
+      color: #003366;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 10px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <h1>Nossos Serviços</h1>
-  <div class="services">
-    <div class="service">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Construction_site_in_Berlin.jpg/640px-Construction_site_in_Berlin.jpg" alt="Obras">
-      <span>⚖️ Estrategista Legal de Obras</span>
+  <h2>Nossos Serviços</h2>
+
+  <div class="services-container">
+    <div class="service-item">
+      <div class="service-title">⚖️ Estrategista Legal de Obras</div>
     </div>
-    <div class="service">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Public_toilet_sign.jpg/640px-Public_toilet_sign.jpg" alt="Licenciamento Sanitário">
-      <span>Licenciamento Sanitário</span>
+    <div class="service-item">
+      <div class="service-title">🏗️ Legalização e Regularização de Obras</div>
     </div>
-    <div class="service">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Berlin_Marathon_2015_Start_Area.jpg/640px-Berlin_Marathon_2015_Start_Area.jpg" alt="Legalização">
-      <span>Legalização e Regularização de Obras</span>
+    <div class="service-item">
+      <div class="service-title">📊 Avaliações e Perícias Imobiliárias</div>
     </div>
-    <div class="service">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Excavator_demo_02.jpg/640px-Excavator_demo_02.jpg" alt="Demolições">
-      <span>Demolições com Planejamento</span>
+    <div class="service-item">
+      <div class="service-title">🧾 Orçamentos de Obras e Licitações</div>
     </div>
-    <div class="service">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Valuation_Report.jpg/640px-Valuation_Report.jpg" alt="Perícias">
-      <span>Avaliações e Perícias Imobiliárias</span>
+    <div class="service-item">
+      <div class="service-title">🧱 Construções, Reformas e Ampliações</div>
     </div>
-    <div class="service">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Hazmat_team_member.jpg/640px-Hazmat_team_member.jpg" alt="SST">
-      <span>Programas e Laudos de SST (PGR, PCMSO, LTCAT, etc)</span>
+    <div class="service-item">
+      <div class="service-title">🔥 Projeto de Bombeiros</div>
     </div>
-    <div class="service">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Construction_cost_estimate_example.jpg/640px-Construction_cost_estimate_example.jpg" alt="Orçamento">
-      <span>Orçamentos de Obras e Licitações</span>
+    <div class="service-item">
+      <div class="service-title">🧼 Licenciamento Sanitário</div>
     </div>
-    <div class="service">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Firefighter_demo_team_in_Japan.jpg/640px-Firefighter_demo_team_in_Japan.jpg" alt="SIPAT">
-      <span>Organização de SIPAT e Brigadas</span>
+    <div class="service-item">
+      <div class="service-title">🧨 Demolições com Planejamento</div>
     </div>
-    <div class="service">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/House_construction.jpg/640px-House_construction.jpg" alt="Construção">
-      <span>Construções, Reformas e Ampliações</span>
+    <div class="service-item">
+      <div class="service-title">📋 Programas e Laudos de SST (PGR, PCMSO, LTCAT, etc)</div>
     </div>
-    <div class="service">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Filing_tax_returns_online.jpg/640px-Filing_tax_returns_online.jpg" alt="E-social">
-      <span>Lançamento de dados no E-social (S2210, S2220, S2240)</span>
+    <div class="service-item">
+      <div class="service-title">🧯 Organização de SIPAT e Brigadas</div>
     </div>
-    <div class="service">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Firetruck_firefighter.jpg/640px-Firetruck_firefighter.jpg" alt="Bombeiros">
-      <span>Projeto de Bombeiros</span>
+    <div class="service-item">
+      <div class="service-title">🧾 Lançamento de dados no E-social (S2210, S2220, S2240)</div>
     </div>
-    <div class="service">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Construction_worker_training_simulation.jpg/640px-Construction_worker_training_simulation.jpg" alt="Treinamentos">
-      <span>Treinamentos (NR05 a NR35)</span>
+    <div class="service-item">
+      <div class="service-title">📚 Treinamentos (NR05 a NR35)</div>
     </div>
   </div>
 </body>
